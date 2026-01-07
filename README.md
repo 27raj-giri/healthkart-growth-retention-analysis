@@ -26,7 +26,7 @@ Evaluate the growth health of an e-commerce product by:
 ### Weekly Growth Accounting
 Breaks WAU into New, Retained, Resurrected, and Churned users to understand **growth drivers**.
 
-![Weekly Growth Accounting](Weekly Growth Accounting Chart/weekly_growth_accounting.png)
+![Weekly Growth Accounting](weekly-growth-accounting-chart/weekly_growth_accounting.png)
 
 ---
 
@@ -34,7 +34,7 @@ Breaks WAU into New, Retained, Resurrected, and Churned users to understand **gr
 Tracks growth efficiency over time.  
 Quick Ratio < 1 indicates churn outweighs growth.
 
-![Quick Ratio Trend](Weekly Growth Accounting Chart/quick_ratio_trend.png)
+![Quick Ratio Trend](weekly-growth-accounting-chart/quick_ratio_trend.png)
 
 ---
 
