@@ -21,25 +21,6 @@ Evaluate the growth health of an e-commerce product by:
 
 ---
 
-## Repository Structure
-
-healthkart-growth-retention-analysis/
-│
-├── Business Insight & Analysis write-up/
-│ └── README.md
-│
-├── Underlying Calculations and Data/
-│ └── README.md
-│
-├── Weekly Growth Accounting Chart/
-│ ├── weekly_growth_accounting.png
-│ ├── quick_ratio_trend.png
-│ └── README.md
-│
-└── README.md
-
----
-
 ## Key Visual Insights
 
 ### Weekly Growth Accounting
