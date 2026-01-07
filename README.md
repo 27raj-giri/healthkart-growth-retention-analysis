@@ -1,56 +1,97 @@
-# HealthKart Growth & Retention Analysis
+# HealthKart Growth & Retention Analysis  
+### Weekly Growth Accounting & Quick Ratio Diagnostics
 
-This repository contains a product analytics case study focused on understanding **growth quality, retention, and churn dynamics** using Growth Accounting and Quick Ratio metrics.
+## Overview
+This repository contains a **product growth and retention case study** that analyzes weekly user behavior using **Growth Accounting** and **Quick Ratio** metrics.
 
-The analysis simulates a real-world Product Analyst / Product Intern assignment and demonstrates how data can be translated into **business insights and actionable recommendations**.
+The goal of this analysis is to go beyond vanity metrics like WAU growth and evaluate whether growth is **sustainable, efficient, and retention-driven**, or if it is masking underlying churn.
+
+The analysis was performed using **Python and Jupyter Notebook**, with insights translated into business and product recommendations.
 
 ---
 
 ## Problem Statement
+HealthKart-style growth data shows an increase in weekly active users. However, top-line growth alone does not answer:
 
-Evaluate the growth health of an e-commerce product by:
-- Breaking down Weekly Active Users (WAU)
-- Identifying whether growth is driven by acquisition or retention
-- Assessing sustainability using growth efficiency metrics
+- Are users being retained?
+- Is growth driven by product stickiness or repeated acquisition?
+- Is churn silently offsetting new user gains?
+
+This project answers:
+> **Is the product growing because users find value, or because acquisition keeps filling a leaky bucket?**
 
 ---
 
-## Key Metrics Used
-- Weekly Growth Accounting (New, Retained, Resurrected, Churned users)
-- Quick Ratio (Growth efficiency indicator)
+## Methodology
+
+### 1. Growth Accounting
+Weekly Active Users are broken down into:
+- New Users
+- Retained Users
+- Resurrected Users
+- Churned Users  
+
+This decomposition helps identify the **true drivers of growth**.
+
+### 2. Quick Ratio
+Quick Ratio measures **growth efficiency**:
+
+- Quick Ratio > 1 → Healthy, compounding growth  
+- Quick Ratio < 1 → Churn outweighs growth  
+
+Tracking this weekly highlights unstable or expensive growth patterns.
 
 ---
 
 ## Key Visual Insights
 
 ### Weekly Growth Accounting
-Breaks WAU into New, Retained, Resurrected, and Churned users to understand **growth drivers**.
+This chart shows the composition of WAU across weeks, highlighting dependency on acquisition versus retention.
 
 ![Weekly Growth Accounting](weekly-growth-accounting-chart/weekly_growth_accounting.png)
 
 ---
 
 ### Quick Ratio Trend
-Tracks growth efficiency over time.  
-Quick Ratio < 1 indicates churn outweighs growth.
+This chart tracks growth efficiency over time and flags weeks where churn exceeded user gains.
 
 ![Quick Ratio Trend](weekly-growth-accounting-chart/quick_ratio_trend.png)
+
+---
+
+## Business Insights (Summary)
+- Growth is **volatile**, not compounding
+- Several high-acquisition weeks are followed by sharp churn spikes
+- Retention, not acquisition, is the primary growth bottleneck
+- Resurrection trends suggest latent brand trust and win-back potential
+
+---
+
+## Technical Implementation
+- Performed exploratory data analysis using **Python (Pandas)**  
+- Built reproducible workflows in **Jupyter Notebook**
+- Computed weekly growth metrics programmatically
+- Visualized trends using **Matplotlib**
+- Validated results using spreadsheet-based calculations
+- Structured outputs for clarity and stakeholder readability
 
 ---
 
 ## Tools & Concepts
 - Growth Accounting Framework
 - Quick Ratio Analysis
+- Python (Pandas, Matplotlib)
+- Jupyter Notebook
 - Excel / Spreadsheet modeling
-- Product metrics interpretation
+- Product and business metrics interpretation
 
 ---
 
 ## Outcome
-- Identified weeks of inefficient growth
-- Highlighted retention as the primary lever for sustainable scale
-- Provided data-backed insights aligned with real PM decision-making
+This case study demonstrates how **data-driven product analytics** can uncover hidden retention issues and prevent misleading growth narratives. The approach reflects real-world expectations for **Product Analyst, Growth, and Consulting roles**.
 
 ---
 
-*This project is for learning and demonstration purposes and does not use real HealthKart data.*
+## Disclaimer
+This project is for educational and demonstration purposes only.  
+No confidential or proprietary HealthKart data has been used.
